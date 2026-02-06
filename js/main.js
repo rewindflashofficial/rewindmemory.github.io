@@ -2,55 +2,7 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-// (function() {
-//         const saved = localStorage.getItem('theme');
-//         if (saved) {
-//             document.documentElement.setAttribute('data-theme', saved);
-//         } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//             document.documentElement.setAttribute('data-theme', 'dark');
-//         }
-//     })();
 
-
-// const toggle = document.getElementById('theme-toggle');
-// const html = document.documentElement;
-
-
-
-// // Get current theme
-// function getTheme() {
-//     return html.getAttribute('data-theme');
-// }
-
-// // Set theme and update UI
-// function setTheme(theme) {
-//     html.setAttribute('data-theme', theme);
-//     localStorage.setItem('theme', theme);
-//     updateToggleText(theme);
-// }
-
-// // Update button text
-// function updateToggleText(theme) {
-//     const text = toggle.querySelector('.toggle-text');
-//     text.textContent = theme === 'dark' ? 'Toggle Light/Dark' : 'Toggle Light/Dark';
-//     toggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
-// }
-
-// // Initialize
-// // updateToggleText(getTheme());
-
-// // Handle toggle click
-// toggle.addEventListener('click', () => {
-//     const current = getTheme();
-//     setTheme(current === 'dark' ? 'light' : 'dark');
-// });
-
-// // Listen for system preference changes
-// // window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-// //     if (!localStorage.getItem('theme')) {
-// //         setTheme(e.matches ? 'dark' : 'light');
-// //     }
-// // });
 
 
 
@@ -70,10 +22,14 @@ function getRandomInt(max) {
         const $songss = document.getElementById('js-songs');
         const $top = $songss.querySelectorAll('[data-top]');
 
+        
 
 
 
-        // console.log(linksFooter);
+
+        
+
+
         setTimeout(() => {
             // console.log("5 秒待ちました。");
             loadingAnime.classList.add("is-loaded--opening");
@@ -169,19 +125,97 @@ function getRandomInt(max) {
         const $lyrics = $songs.querySelectorAll('[data-lyrics]');
         const $number = $songs.querySelectorAll('[data-number]');
 
-        // console.log($top);
-        // const init = () => {
-        //     $title[0].classList.add('is-active');
-        // };
-        // init();
+        const $linksSec = document.getElementById("js-footer-links");
+        const $links = $linksSec.querySelectorAll('[data-links]');
 
+        //リンク
+        var AppleMusicLinks = new Array(
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+        )
+        var SpotifyLinks = new Array(
+            "https://open.spotify.com/intl-ja/album/2vUuGV0Cj1ZSGoY12DCEpM",
+            "https://open.spotify.com/intl-ja/track/4wysDnFYwU7onncyj7wCfu",
+            "https://open.spotify.com/intl-ja/track/387MsQXGERnaSsODGC6pl2",
+            "https://open.spotify.com/intl-ja/track/5p8UOtK2zW96dh2Ptkxbat",
+            "https://open.spotify.com/intl-ja/track/5rnwFd9mK7UTOKtNE7200I?",
+            "https://open.spotify.com/intl-ja/track/6WDXPOHh1yeFc13kqwrRey",
+            "https://open.spotify.com/intl-ja/track/1iOEJlNJ3hMc6Q7ejuAjDi",
+            "https://open.spotify.com/intl-ja/track/34h9VQamrrSANkXhbcxr7B",
+            "https://open.spotify.com/intl-ja/track/0xAuks5AYhBKSVyd4UrXo0",
+            "https://open.spotify.com/intl-ja/track/5ZLv08ZF648xvwi4PXgo85",
+            "https://open.spotify.com/intl-ja/track/1IevDKgAwxXv4BEO8RgOKf",
+            "#",
+        )
+        var YoutubeLinks = new Array(
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+            "#",
+        )
+        var SoundCloudLinks = new Array(
+            "https://soundcloud.com/rewindflash/sets/rewindmemory",
+            "https://soundcloud.com/volta342/dopamine_vri",
+            "https://soundcloud.com/icesawder/crossover",
+            "https://soundcloud.com/volta342/resillixnce",
+            "https://soundcloud.com/tanakano/dairou-tanaka-letsu-execution",
+            "https://soundcloud.com/volta342/agene",
+            "https://soundcloud.com/volta342/letsu_purple",
+            "https://soundcloud.com/icesawder/luvmyself",
+            "https://soundcloud.com/volta342/resett",
+            "https://soundcloud.com/volta342/rf26",
+            "https://soundcloud.com/mylta/repeat-again"
+        )
+        var BandCampLinks = new Array(
+            "https://rewindflash.bandcamp.com/album/rewindmemory",
+            "https://rewindflash.bandcamp.com/track/dopamine-2",
+            "https://rewindflash.bandcamp.com/track/crossover",
+            "https://rewindflash.bandcamp.com/track/resillixnce",
+            "https://rewindflash.bandcamp.com/track/execution",
+            "https://rewindflash.bandcamp.com/track/gene",
+            "https://rewindflash.bandcamp.com/track/purple-2",
+            "https://rewindflash.bandcamp.com/track/luvmyself",
+            "https://rewindflash.bandcamp.com/track/resett",
+            "https://rewindflash.bandcamp.com/track/26",
+            "https://rewindflash.bandcamp.com/track/feat-letsu",
+        )
 
+        //initialize
+        $links[0].setAttribute('href', AppleMusicLinks[0]);
+        $links[1].setAttribute('href', SpotifyLinks[0]);
+        $links[2].setAttribute('href', YoutubeLinks[0]);
+        $links[3].setAttribute('href', SoundCloudLinks[0]);
+        $links[4].setAttribute('href', BandCampLinks[0]);
+        
+        
+        // console.log(SoundCloudLinks[0]);
 
         const titleClick = (e) => {
             const $this = e.currentTarget;
             const targetValue = $this.dataset.title;
 
             swiper.slideTo(targetValue);
+            $links[0].setAttribute('href', AppleMusicLinks[targetValue]);
+            $links[1].setAttribute('href', SpotifyLinks[targetValue]);
+            $links[2].setAttribute('href', YoutubeLinks[targetValue]);
+            $links[3].setAttribute('href', SoundCloudLinks[targetValue]);
+            $links[4].setAttribute('href', BandCampLinks[targetValue]);
 
             let index_n = 0;
             while (index_n < $title.length) {
@@ -248,10 +282,15 @@ function getRandomInt(max) {
             }
 
 
-
             const sliderIndex = swiper.realIndex;
             $title[sliderIndex].classList.add('is-active');
             $page[sliderIndex].classList.add('is-visible');
+            
+            $links[0].setAttribute('href', AppleMusicLinks[swiper.realIndex]);
+            $links[1].setAttribute('href', SpotifyLinks[swiper.realIndex]);
+            $links[2].setAttribute('href', YoutubeLinks[swiper.realIndex]);
+            $links[3].setAttribute('href', SoundCloudLinks[swiper.realIndex]);
+            $links[4].setAttribute('href', BandCampLinks[swiper.realIndex]);
 
             if (sliderIndex != 0) {
                 $sideBar[0].classList.add('is-visible');
@@ -347,7 +386,7 @@ function getRandomInt(max) {
 
     }
 
-    // $credit[0].addEventListener('click', (e) => handleClick(e));
+
 
     let index = 0;
     while (index < $credit.length) {
@@ -355,21 +394,7 @@ function getRandomInt(max) {
         $lyrics[index].addEventListener('click', (e) => lyricsClick(e));
         index++;
     }
-    // const swiperIndex = swiper.activeIndex;
-    //クレジットと歌詞
 
-
-    // const $credit = document.querySelectorAll('.song-credit');
-    // const $lyrics = document.querySelectorAll('.song-lyrics');
-
-    // $credit.addEventListener('click', () => {
-    //     $credit.classList.add('is-invisible');
-    //     $lyrics.classList.add('is-visible');
-    // });
-    // $lyrics.addEventListener('click', () => {
-    //     $lyrics.classList.remove('is-visible');
-    //     $credit.classList.remove('is-invisible');
-    // });
 
 
 
