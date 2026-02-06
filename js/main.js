@@ -130,17 +130,17 @@ function getRandomInt(max) {
 
         //リンク
         var AppleMusicLinks = new Array(
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652,
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
         )
         var SpotifyLinks = new Array(
             "https://open.spotify.com/intl-ja/album/2vUuGV0Cj1ZSGoY12DCEpM",
@@ -400,6 +400,7 @@ function getRandomInt(max) {
 
 
 })();
+
 
 
 
