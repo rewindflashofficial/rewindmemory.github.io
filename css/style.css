@@ -1300,17 +1300,7 @@ body {
 }
 
 
-@keyframes fadeInRight {
-    0% {
-        transform: translateX(30px);
-        opacity: 0;
-    }
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 @media screen and (min-width: 768px) {
     .album-title::before {
@@ -1366,7 +1356,18 @@ body {
 }
 
 .album-title.is-loaded-title::before {
-    animation: fadeInRight 1s cubic-bezier(0.58, 0.04, 0.25, 1.00) .7s 1 forwards;
+    animation: fadeInRight 1.5s ease .7s 1 forwards;
+}
+@keyframes fadeInRight {
+    0% {
+        scale: .9;
+        opacity: 0;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 .album-title>img {
@@ -1590,3 +1591,4 @@ body {
         font-size: 15px;
     }
 }
+
