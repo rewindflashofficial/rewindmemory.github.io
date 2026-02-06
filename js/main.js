@@ -138,7 +138,7 @@ function getRandomInt(max) {
             "https://music.apple.com/jp/artist/rewindflash/1833133652",
             "https://music.apple.com/jp/artist/rewindflash/1833133652",
             "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652,
+            "https://music.apple.com/jp/artist/rewindflash/1833133652",
             "https://music.apple.com/jp/artist/rewindflash/1833133652",
             "https://music.apple.com/jp/artist/rewindflash/1833133652",
         )
@@ -400,6 +400,7 @@ function getRandomInt(max) {
 
 
 })();
+
 
 
 
