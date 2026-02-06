@@ -1294,9 +1294,22 @@ body {
     z-index: 20;
     background-size: contain;
     vertical-align: middle;
-    opacity: .3;
     background-repeat: no-repeat;
     text-align: right;
+    
+}
+
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1318,7 +1331,7 @@ body {
 
 .album-title.is-loaded-title {
     animation: blinkIn 1s cubic-bezier(.5, -0.01, .52, 1) forwards;
-    opacity: 1;
+    
 }
 
 
@@ -1347,6 +1360,13 @@ body {
         opacity: 1;
     }
 
+}
+.album-title::before {
+    opacity: 0;
+}
+
+.album-title.is-loaded-title::before {
+    animation: fadeInRight 1s cubic-bezier(0.58, 0.04, 0.25, 1.00) .7s 1 forwards;
 }
 
 .album-title>img {
@@ -1487,19 +1507,7 @@ body {
         opacity: .8;
     }
 
-    /* .album-song--title:hover::after {
-        background: var(--color-font-dark);
-        content: '';
-        display: block;
-        height: 1px;
-        width: 0;
-        transform: translateX(-50%);
-        transition: 1.2s cubic-bezier(0.22, 1, 0.36, 1);
-        position: absolute;
-        bottom: -1px;
-        left: 50%;
-        z-index: 10;
-    } */
+   
 
 }
 
