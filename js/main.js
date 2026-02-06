@@ -157,17 +157,17 @@ function getRandomInt(max) {
             "#",
         )
         var YoutubeLinks = new Array(
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
-            "#",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://youtu.be/Wx_t2c6pTbY",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://youtu.be/1dLvjjzC2zo",
+            "https://www.youtube.com/@Rewind-Flash",
+            "https://www.youtube.com/@Rewind-Flash",
         )
         var SoundCloudLinks = new Array(
             "https://soundcloud.com/rewindflash/sets/rewindmemory",
@@ -400,5 +400,6 @@ function getRandomInt(max) {
 
 
 })();
+
 
 
