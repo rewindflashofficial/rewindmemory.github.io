@@ -130,17 +130,17 @@ function getRandomInt(max) {
 
         //リンク
         var AppleMusicLinks = new Array(
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
-            "https://music.apple.com/jp/artist/rewindflash/1833133652",
+            "https://music.apple.com/jp/album/rewindmemory/1875276328",
+            "https://music.apple.com/jp/song/dopamine-album-ver/1875276329",
+            "https://music.apple.com/jp/song/crossover/1875276331",
+            "https://music.apple.com/jp/song/resillixnce/1875276332",
+            "https://music.apple.com/jp/song/execution/1875276336",
+            "https://music.apple.com/jp/song/%CE%B1-gene/1875276337",
+            "https://music.apple.com/jp/song/purple-album-ver/1875276338",
+            "https://music.apple.com/jp/song/luvmyself/1875276339",
+            "https://music.apple.com/jp/song/resett-album-ver/1875276340",
+            "https://music.apple.com/jp/song/26/1875276343",
+            "https://music.apple.com/jp/song/%E3%81%BE%E3%81%9F-%E7%B9%B0%E3%82%8A%E8%BF%94%E3%81%99-feat-letsu-%E3%81%AD%E3%82%93%E3%81%AD/1875276347",
         )
         var SpotifyLinks = new Array(
             "https://open.spotify.com/intl-ja/album/2vUuGV0Cj1ZSGoY12DCEpM",
@@ -400,6 +400,7 @@ function getRandomInt(max) {
 
 
 })();
+
 
 
 
