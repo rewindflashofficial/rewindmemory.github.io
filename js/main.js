@@ -166,7 +166,7 @@ function getRandomInt(max) {
             "https://www.youtube.com/@Rewind-Flash",
             "https://www.youtube.com/@Rewind-Flash",
             "https://youtu.be/1dLvjjzC2zo",
-            "https://www.youtube.com/@Rewind-Flash",
+            "https://www.youtube.com/watch?v=VXSOvzku66w",
             "https://www.youtube.com/@Rewind-Flash",
         )
         var SoundCloudLinks = new Array(
